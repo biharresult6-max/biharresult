@@ -151,43 +151,42 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Base style for Laptop / Desktop / Mobile Desktop Site */
+/* 💻 Laptop/Desktop aur Mobile Desktop Mode ke liye default layout */
 .main-container {
     width: 1100px;
     margin: 0 auto;
     background: #fff;
 }
 
-/* Default state: Desktop menu dikhega aur Mobile menu chhupega */
 .desktop-menu {
-    display: block !important;
-}
-.mobile-menu {
-    display: none !important;
+    display: block;
 }
 
-/* 📱 BARS MOBILE BROWSER KE LIYE (Jab normal mobile screen ho) */
-/* Media query tabhi chalegi jab screen real mobile browser width par ho */
-@media screen and (max-width: 768px) {
-    /* Agar user ne Desktop Site ON nahi kiya hai, tabhi yeh code chalega */
-    html:not([style*="zoom"]) .main-container {
+.mobile-menu {
+    display: none;
+}
+
+/* 📱 SATEEK MOBILE BROWSER KE LIYE (Jab tak Desktop Site ON na ho) */
+/* Max-device-width aur standard media query se finger-zoom karne par layout nahi bigdega */
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    .main-container {
         width: 100% !important;
     }
 
-    html:not([style*="zoom"]) .desktop-menu {
-        display: none !important; /* Laptop menu chhup gaya */
+    .desktop-menu {
+        display: none !important; /* Laptop menu chhup jayega */
     }
 
-    html:not([style*="zoom"]) .mobile-menu {
-        display: block !important; /* Mobile menu (☰ Menu) bahar aa gaya */
+    .mobile-menu {
+        display: block !important; /* Mobile menu (☰ Menu) dikhega */
     }
 
-    html:not([style*="zoom"]) .mobile-links {
+    .mobile-links {
         display: none;
         background: #000080;
     }
 
-    html:not([style*="zoom"]) .mobile-links a {
+    .mobile-links a {
         display: block;
         color: white;
         padding: 12px;

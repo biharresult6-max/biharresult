@@ -2,23 +2,31 @@
 <html lang="en-IN">
 
 <head>
+
     <meta charset="UTF-8">
     <title>BiharResult.com.bm</title>
 
-    <meta name="description" content="Latest Government Jobs, Admit Card, Result, Admission, Answer Key and Syllabus updates on Bihar Result.">
+    <meta name="description" content="Latest Government Jobs, 
+    Admit Card, Result, Admission, Answer Key and Syllabus updates on Bihar Result.">
+
     <meta name="theme-color" content="#B22222">
     <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="Bihar Result, Latest Jobs, Admit Card, Result, Admission, Answer Key, Syllabus, Sarkari Result, Bihar Jobs">
+
+    <meta name="keywords" content="Bihar Result, Latest Jobs, 
+    Admit Card, Result, Admission, Answer Key, Syllabus, Sarkari Result, Bihar Jobs">
 
     <link rel="canonical" href="https://biharresult.onrender.com">
+
     <meta name="google-site-verification" content="DEps9CSloqhTB_d8tryOs6Ce3ITc1yMNcf98R4kdycI" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bihar Result">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bihar Result - Latest Jobs, Results, Admit Card">
-    <meta property="og:description" content="Get the latest Government Jobs, Results, Admit Cards, Answer Key, Admissions and Syllabus updates.">
+    <meta property="og:description" content="Get the latest Government Jobs, 
+    Results, Admit Cards, Answer Key, Admissions and Syllabus updates.">
     <meta property="og:url" content="https://biharresult.onrender.com/">
     <meta property="og:image" content="https://biharresult.onrender.com/static/logo.png">
     <meta property="og:site_name" content="Bihar Result">
@@ -27,363 +35,936 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon.ico">
 
-    <style>
-        /* 💻 LAPTOP & DESKTOP DEFAULT STYLES */
-        body {
-            margin: 0;
-            background: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
+<style>
+.mobile-menu{
+display:none;
+}
 
-        .main-container {
-            width: 1100px;
-            margin: 0 auto;
-            background: #fff;
-        }
+@media screen and (max-width:1100px){
 
-        .desktop-menu {
-            display: block !important;
-        }
+.desktop-menu{
+display:none;
+}
 
-        .mobile-menu, .mobile-links {
-            display: none !important;
-        }
+.mobile-menu{
+display:block;
+background:#000080;
+padding:15px;
+color:white;
+}
 
-        .box {
-            border: 1px solid gray;
-            padding: 5px;
-            box-sizing: border-box;
-            width: 31%;
-            display: inline-block;
-            vertical-align: top;
-        }
+.mobile-links{
+display:none;
+background:#000080;
+}
 
-        .box ul {
-            padding-left: 20px;
-        }
+.mobile-links a{
+display:block;
+color:white;
+padding:12px;
+text-decoration:none;
+border-top:1px solid #444;
+}
+}
+</style>
+<style>
+.box{
+    border:1px solid gray;
+    padding:5px;
+    box-sizing:border-box;
+}
 
-        .box li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        #overlay {
-            backdrop-filter: blur(5px);
-        }
-
-        a:link, a:visited { color: blue; }
-        a:hover, a:active { color: darkblue; }
-
-        /* ⏱️ Laptop standard time style */
-        .time-wrapper {
-            text-align: center;
-            font-size: 20px;
-            margin: 14px 0;
-        }
-
-        .logo-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            margin: 0;
-            color: #fff;
-            font-family: 'Times New Roman', Georgia, serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: clamp(28px, 7vw, 60px);
-            white-space: nowrap;
-        }
-
-        .logo-title span { font-size: clamp(24px, 6vw, 50px); }
-
-        .site-name {
-            margin: 10px 0 0;
-            text-align: center;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            font-size: clamp(15px, 3.5vw, 26px);
-        }
-
-        .social-links { text-align: center; }
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            display: inline-block;
-        }
-
-        /* 📱 CLEAN & FIX RESPONSIVE MOBILE VIEW (Bypass on Desktop Mode / No Zoom Breakage) */
-        @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
-            .main-container {
-                width: 100% !important;
-            }
-
-            .desktop-menu {
-                display: none !important;
-            }
-
-            .mobile-menu {
-                display: block !important;
-                background: #000080;
-                padding: 15px;
-                color: white;
-            }
-
-            .mobile-links a {
-                display: block;
-                color: white;
-                padding: 12px;
-                text-decoration: none;
-                border-top: 1px solid #444;
-            }
-
-            .box {
-                width: 100% !important;
-                display: block !important;
-                margin-bottom: 15px;
-            }
-
-            .logo-title { gap: 5px; letter-spacing: 0; }
-            .site-name { margin-top: 6px; }
-
-            .social-links {
-                display: flex;
-                justify-content: center;
-                gap: 8px;
-            }
-            .social-links a { margin: 0 !important; font-size: 14px; }
-            .faq-heading { font-size: 20px; padding: 10px 5px !important; }
-
-            /* ⏱️ Mobile par time text ko chota karne ka rule */
-            .time-wrapper {
-                font-size: 14px !important;
-                margin: 8px 0 !important;
-                font-weight: bold;
-            }
-        }
-    </style>
-
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"Bihar Result",
-      "url":"https://biharresult.com.Bm/",
-      "image":"https://biharresult.com.Bm/static/logo.png",
-      "potentialAction":{
-        "@type":"SearchAction",
-        "target":"https://biharresult.com.Bm/search?q={search_term_string}",
-        "query-input":"required name=search_term_string"
-      }
+@media screen and (max-width:1100px){
+    .box{
+        width:calc(50% - 5px);
     }
-    </script>
+}
+
+@media screen and (min-width:769px){
+    .box{
+        width:31%;
+    }
+}
+
+.desktop-menu{
+    display:block;
+}
+
+.mobile-menu{
+    display:none;
+}
+
+.mobile-links{
+    display:none;
+}
+
+@media screen and (max-width:1100px){
+
+    .desktop-menu{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+}
+</style>
+<style>
+.box ul{
+    padding-left:20px;
+}
+
+.box li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+</style>
+<style>
+#overlay{
+backdrop-filter: blur(5px);
+}
+</style>
+<style>
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:active {
+    color: darkblue;
+}
+
+</style>
+<style>
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Base style for Laptop / Desktop / Mobile Desktop Site */
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* Default state: Desktop menu dikhega aur Mobile menu chhupega */
+.desktop-menu {
+    display: block !important;
+}
+.mobile-menu {
+    display: none !important;
+}
+
+/* 📱 BARS MOBILE BROWSER KE LIYE (Jab normal mobile screen ho) */
+/* Media query tabhi chalegi jab screen real mobile browser width par ho */
+@media screen and (max-width: 768px) {
+    /* Agar user ne Desktop Site ON nahi kiya hai, tabhi yeh code chalega */
+    html:not([style*="zoom"]) .main-container {
+        width: 100% !important;
+    }
+
+    html:not([style*="zoom"]) .desktop-menu {
+        display: none !important; /* Laptop menu chhup gaya */
+    }
+
+    html:not([style*="zoom"]) .mobile-menu {
+        display: block !important; /* Mobile menu (☰ Menu) bahar aa gaya */
+    }
+
+    html:not([style*="zoom"]) .mobile-links {
+        display: none;
+        background: #000080;
+    }
+
+    html:not([style*="zoom"]) .mobile-links a {
+        display: block;
+        color: white;
+        padding: 12px;
+        text-decoration: none;
+        border-top: 1px solid #444;
+    }
+}
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+    /* ... aapka purana mobile code ... */
+
+    /* ⏱️ Time text ko mobile par chota karne ke liye */
+    .current-time-text {
+        font-size: 14px !important; /* Font chota kar diya */
+        text-align: center;         /* Center mein align rahega */
+        margin: 5px 0;             /* Thoda upar niche ka gap kam kiya */
+    }
+}
+</style>
+<style>
+.logo-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin:0;
+    color:#fff;
+    font-family:'Times New Roman', Georgia, serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:clamp(28px,7vw,60px);
+    white-space:nowrap;
+}
+
+.logo-title span{
+    font-size:clamp(24px,6vw,50px);
+}
+
+.site-name{
+    margin:10px 0 0;
+    text-align:center;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    font-size:clamp(15px,3.5vw,26px);
+}
+
+@media (max-width:480px){
+    .logo-title{
+        gap:5px;
+        letter-spacing:0;
+    }
+
+    .site-name{
+        margin-top:6px;
+    }
+}
+</style>
+<style>
+.social-links{
+    text-align:center;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
+}
+
+@media (max-width:768px){
+.social-links{
+display:flex;
+justify-content:center;
+gap:8px;
+}
+
+.social-links a{
+margin:0 !important;
+font-size:14px;
+}
+}
+</style>
+<style>
+@media (max-width:768px){
+.faq-heading{
+font-size:20px;
+padding:10px 5px !important;
+}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Bihar Result",
+  "url":"https://biharresult.com.Bm/",
+  "image":"https://biharresult.com.Bm/static/logo.png",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://biharresult.com.Bm/search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+
 </head>
 
-<body style="font-family:Arial;">
+    <body style="font-family:Arial;">
 
 <div class="main-container">
-    <div style="background:red; color:white; text-align:center; padding:20px; width:100%; box-sizing:border-box;">
-        <a href="/" style="text-decoration:none; color:white;">
-            <div class="logo-title">
-                <span>📚</span>
-                BIHAR RESULT
-            </div>
-        </a>
-        <p class="site-name">BiharResult.com.Bm</p>
+    <div style="
+background:red;
+color:white;
+text-align:center;
+padding:20px;
+width:100%;
+box-sizing:border-box;
+">
+    <a href="/" style="text-decoration:none; color:white;">
+    <div class="logo-title">
+        <span>📚</span>
+        BIHAR RESULT
     </div>
+    </a>
 
-    <!-- Desktop Menu -->
-    <div class="desktop-menu" style="background:blue; padding:12px; text-align:center; font-size:20px;">
-        <a href="/" style="color:white; text-decoration:none; margin:10px;">Home</a>
-        <a href="/latest-job" style="color:white; text-decoration:none; margin:10px;">Latest Job</a>
-        <a href="/admit-card" style="color:white; text-decoration:none; margin:10px;">Admit Card</a>
-        <a href="/result" style="color:white; text-decoration:none; margin:10px;">Result</a>
-        <a href="/admission" style="color:white; text-decoration:none; margin:10px;">Admission</a>
-        <a href="/syllabus" style="color:white; text-decoration:none; margin:10px;">Syllabus</a>
-        <a href="/answer-key" style="color:white; text-decoration:none; margin:10px;">Answer Key</a>
-        
-        <div style="position:relative; display:inline-block;">
-            <a href="javascript:void(0);" onclick="var x=document.getElementById('moreMenu'); x.style.display=(x.style.display=='block')?'none':'block';" style="color:white; text-decoration:none; margin:10px;">More ▼</a>
-            <div id="moreMenu" style="display:none; position:absolute; top:35px; right:0; background:rgba(0,0,0,0.85); padding:10px; border-radius:10px; min-width:180px; z-index:999;">
-                <a href="/contact" style="color:white; text-decoration:none; display:block; padding:8px;">Contact Us</a>
-                <a href="/privacy" style="color:white; text-decoration:none; display:block; padding:8px;">Privacy Policy</a>
-                <a href="/disclaimer" style="color:white; text-decoration:none; display:block; padding:8px;">Disclaimer</a>
-            </div>
-        </div>
-        <a href="javascript:void(0);" onclick="var x=document.getElementById('searchBox'); var o=document.getElementById('overlay'); x.style.display='block'; o.style.display='block';" style="color:white; text-decoration:none; font-size:35px;">🔍</a>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <span onclick="var x=document.getElementById('mobileLinks'); x.style.display=(x.style.display=='block')?'none':'block';" style="font-size:30px;cursor:pointer;">☰ Menu</span>
-        <span onclick="var x=document.getElementById('searchBox'); var o=document.getElementById('overlay'); x.style.display='block'; o.style.display='block';" style="float:right;font-size:30px;cursor:pointer;color:white;">🔍</span>
-        
-        <div id="mobileLinks" class="mobile-links">
-            <a href="/">Home</a>
-            <a href="/latest-job">Latest Job</a>
-            <a href="/admit-card">Admit Card</a>
-            <a href="/result">Result</a>
-            <a href="/admission">Admission</a>
-            <a href="/syllabus">Syllabus</a>
-            <a href="/answer-key">Answer Key</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/disclaimer">Disclaimer</a>
-        </div>
-    </div>
-
-    <!-- Overlay & Search Box -->
-    <div id="overlay" onclick="document.getElementById('overlay').style.display='none'; document.getElementById('searchBox').style.display='none';" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:999;"></div>
-    <div id="searchBox" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:90%; max-width:500px; text-align:center; z-index:1000;">
-        <form action="/search" method="get" style="display:flex; align-items:center; justify-content:center; gap:8px;">
-            <div style="position:relative; width:320px; max-width:70%; flex:1;">
-                <span style="position:absolute; left:14px; top:50%; transform:translateY(-50%); color:#666; font-size:18px; pointer-events:none;">🔍</span>
-                <input type="text" name="q" placeholder="Search Jobs, Results, Admit Card..." style="width:100%; padding:12px 12px 12px 42px; background:white; color:black; border:2px solid green; border-radius:25px; font-size:16px; outline:none; box-sizing:border-box;">
-            </div>
-            <button type="submit" style="padding:12px 18px; background:blue; color:white; border:none; border-radius:25px; font-size:16px; cursor:pointer; white-space:nowrap;">Search</button>
-        </form>
-    </div>
-
-    <h2 style="text-align:center; font-size:25px;">Welcome to Bihar Result Portal</h2>
-    
-    <!-- FIX CODE: Inline font size hata kar 'time-wrapper' class de di hai -->
-    <p class="time-wrapper">
-        Today: <span id="datetime"></span>
+    <p class="site-name">
+        BiharResult.com.Bm
     </p>
 
-    <!-- Breaking News -->
-    <div style="border:2px solid #c9b98a; overflow:hidden; display:flex; align-items:center; background:#fff; height:45px;">
-        <div style="background:#c40000; color:white; width:180px; height:55px; display:flex; align-items:center; justify-content:center; font-weight:bold;">📢 Breaking News</div>
-        <marquee behavior="scroll" direction="left" scrollamount="6" style="line-height:55px;">
-            {% for title, link in latest_jobs %}
-                <a href="{{ link }}" style="color:#0066cc; text-decoration:none; font-weight:bold;">{{ title }}</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            {% endfor %}
-        </marquee>
+</div>
+    <div class="desktop-menu" style="background:blue; padding:12px; text-align:center; font-size:20px;">
+
+<a href="/" style="color:white; text-decoration:none; margin:10px;">Home</a>
+
+<a href="/latest-job" style="color:white; text-decoration:none; margin:10px;">Latest Job</a>
+
+<a href="/admit-card" style="color:white; text-decoration:none; margin:10px;">Admit Card</a>
+
+<a href="/result" style="color:white; text-decoration:none; margin:10px;">Result</a>
+
+<a href="/admission" style="color:white; text-decoration:none; margin:10px;">Admission</a>
+
+<a href="/syllabus" style="color:white; text-decoration:none; margin:10px;">Syllabus</a>
+
+<a href="/answer-key" style="color:white; text-decoration:none; margin:10px;">Answer Key</a>
+
+<div style="position:relative; display:inline-block;">
+
+<a href="javascript:void(0);"
+onclick="
+var x=document.getElementById('moreMenu');
+if(x.style.display=='block'){
+x.style.display='none';
+}else{
+x.style.display='block';
+}
+"
+style="color:white; text-decoration:none; margin:10px;">
+More ▼
+</a>
+
+<div id="moreMenu" style="
+display:none;
+position:absolute;
+top:35px;
+right:0;
+background:rgba(0,0,0,0.85);
+padding:10px;
+border-radius:10px;
+min-width:180px;
+z-index:999;
+">
+
+<a href="/contact" style="color:white; text-decoration:none; display:block; padding:8px;">
+Contact Us
+</a>
+
+<a href="/privacy" style="color:white; text-decoration:none; display:block; padding:8px;">
+Privacy Policy
+</a>
+
+<a href="/disclaimer" style="color:white; text-decoration:none; display:block; padding:8px;">
+Disclaimer
+</a>
+
+</div>
+
+</div>
+<a href="javascript:void(0);"
+onclick="
+var x=document.getElementById('searchBox');
+var o=document.getElementById('overlay');
+
+if(x.style.display=='none' || x.style.display==''){
+    x.style.display='block';
+    o.style.display='block';
+}else{
+    x.style.display='none';
+    o.style.display='none';
+}
+"
+style="color:white; text-decoration:none; font-size:35px;">
+🔍
+</a>
+</div>
+<div class="mobile-menu">
+
+<span onclick="
+var x=document.getElementById('mobileLinks');
+if(x.style.display=='block'){
+x.style.display='none';
+}else{
+x.style.display='block';
+}
+"
+style="font-size:30px;cursor:pointer;">
+☰ Menu
+</span>
+
+<span
+onclick="
+var x=document.getElementById('searchBox');
+var o=document.getElementById('overlay');
+
+if(x.style.display=='none' || x.style.display==''){
+    x.style.display='block';
+    o.style.display='block';
+}else{
+    x.style.display='none';
+    o.style.display='none';
+}
+"
+style="float:right;font-size:30px;cursor:pointer;color:white;">
+🔍
+</span>
+
+<div id="mobileLinks" class="mobile-links">
+
+<a href="/">Home</a>
+<a href="/latest-job">Latest Job</a>
+<a href="/admit-card">Admit Card</a>
+<a href="/result">Result</a>
+<a href="/admission">Admission</a>
+<a href="/syllabus">Syllabus</a>
+<a href="/answer-key">Answer Key</a>
+<a href="/contact">Contact Us</a>
+<a href="/privacy">Privacy Policy</a>
+<a href="/disclaimer">Disclaimer</a>
+
+</div>
+
+</div>
+<div id="overlay"
+onclick="
+document.getElementById('overlay').style.display='none';
+document.getElementById('searchBox').style.display='none';
+"
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:999;
+">
+</div>
+
+<div id="searchBox"
+style="
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:90%;
+max-width:500px;
+background:transparent;
+padding:15px;
+border-radius:10px;
+text-align:center;
+z-index:1000;
+">
+
+<form action="/search" method="get"
+style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+">
+
+<div style="
+position:relative;
+width:320px;
+max-width:70%;
+flex:1;
+">
+
+<span style="
+position:absolute;
+left:14px;
+top:50%;
+transform:translateY(-50%);
+color:#666;
+font-size:18px;
+pointer-events:none;
+">
+🔍
+</span>
+
+<input
+type="text"
+name="q"
+placeholder="Search Jobs, Results, Admit Card..."
+style="
+width:100%;
+padding:12px 12px 12px 42px;
+background:white;
+color:black;
+border:2px solid green;
+border-radius:25px;
+font-size:16px;
+outline:none;
+box-sizing:border-box;
+">
+
+</div>
+
+<button
+type="submit"
+style="
+padding:12px 18px;
+background:blue;
+color:white;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+white-space:nowrap;
+">
+Search
+</button>
+
+</form>
+
+</div>
+
+<h2 style="text-align:center; font-size:25px;">
+Welcome to Bihar Result Portal
+</h2>
+<p style="text-align:center; font-size:20px;">
+    Today: <span id="datetime"></span>
+</p>
+<div style="border:2px solid #c9b98a; border-radius:0px; overflow:hidden; display:flex; align-items:center; background:#fff; height:45px;">
+
+    <div style="background:#c40000; color:white; width:180px; height:55px; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+        📢 Breaking News
     </div>
 
-    <h2 style="background:blue; color:white; text-align:center; padding:10px;">Latest Updates</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="line-height:55px;">
+        {% for title, link in latest_jobs %}
+            <a href="{{ link }}" style="color:#0066cc; text-decoration:none; font-weight:bold;">
+                {{ title }}
+            </a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+        {% endfor %}
+    </marquee>
 
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:10px;">
-        <div class="box" style="background:red; padding:20px; text-align:center;"><a href="/job/ssc-cgl-2026" style="color:white; text-decoration:none;">SSC CGL Form 2026</a></div>
-        <div class="box" style="background:violet; padding:20px; text-align:center;"><a href="/job/rrb-alp-2026" style="color:white; text-decoration:none;">RRB ALP Form 2026</a></div>
-        <div class="box" style="background:blue; padding:20px; text-align:center;"><a href="#" style="color:white; text-decoration:none;">UPSSSC Lower PCS Form</a></div>
-        <div class="box" style="background:green; padding:20px; text-align:center;"><a href="/job/ctet-september-2026" style="color:white; text-decoration:none;">CTET September Online Form</a></div>
-        <div class="box" style="background:deepskyblue; padding:20px; text-align:center;"><a href="/job/rrb-technician-2026" style="color:white; text-decoration:none;">RRB Technician Form 2026</a></div>
-        <div class="box" style="background:brown; padding:20px; text-align:center;"><a href="#" style="color:white; text-decoration:none;">UPSSSC Excise Constable</a></div>
+</div>
+
+<h2 style="background:blue; color:white; text-align:center; padding:10px;">
+Latest Updates
+</h2>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:10px;">
+
+<div class="box" style="background:red; padding:20px; text-align:center;">
+<a href="/job/ssc-cgl-2026" style="color:white; text-decoration:none;">SSC CGL Form 2026</a>
+</div>
+
+<div class="box" style="background:violet; padding:20px; text-align:center;">
+<a href="/job/rrb-alp-2026" style="color:white; text-decoration:none;">RRB ALP Form 2026</a>
+</div>
+
+<div class="box" style="background:blue; padding:20px; text-align:center;">
+<a href="#" style="color:white; text-decoration:none;">UPSSSC Lower PCS Form</a>
+</div>
+
+<div class="box" style="background:green; padding:20px; text-align:center;">
+<a href="/job/ctet-september-2026" style="color:white; text-decoration:none;">CTET September Online Form</a>
+</div>
+
+<div class="box" style="background:deepskyblue; padding:20px; text-align:center;">
+<a href="/job/rrb-technician-2026" style="color:white; text-decoration:none;">RRB Technician Form 2026</a>
+</div>
+
+<div class="box" style="background:brown; padding:20px; text-align:center;">
+<a href="#" style="color:white; text-decoration:none;">UPSSSC Excise Constable</a>
+</div>
+
+</div>
+
+<div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; margin:10px;">
+
+    <div class="box" style="border:1px solid gray; padding:5px;">
+
+    <div style="background:red; color:white; text-align:center; padding:10px;">
+        <h2>Results</h2>
     </div>
 
-    <!-- Boxes Container Section -->
-    <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; margin:10px;">
-        <!-- Results -->
-        <div class="box">
-            <div style="background:red; color:white; text-align:center; padding:10px;"><h2>Results</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in results %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>       
-            <div style="text-align:center; margin:15px;"><a href="/result" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Results</a></div>
-        </div>
+    <ul style="line-height:35px;">
 
-        <!-- Admit Cards -->
-        <div class="box">
-            <div style="background:red; color:white; text-align:center; padding:10px;"><h2>Admit Cards</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in admit_cards %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>
-            <div style="text-align:center; margin:15px;"><a href="/admit-card" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Admit Cards</a></div>
-        </div>
+{% for title, link in results %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
 
-        <!-- Latest Jobs -->
-        <div class="box">
-            <div style="background:red; color:white; text-align:center; padding:10px;"><h2>Latest Jobs</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in latest_jobs %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>
-            <div style="text-align:center; margin:15px;"><a href="/latest-job" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Latest Jobs</a></div>
-        </div>
+</ul>       
+    <div style="text-align:center; margin:15px;">
+<a href="/result"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Results
+</a>
+</div>
 
-        <!-- Answer Key -->
-        <div class="box">
-            <div style="background:green; color:white; text-align:center; padding:10px;"><h2>Answer Key</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in answers_key %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>
-            <div style="text-align:center; margin:15px;"><a href="/answer-key" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Answer Key</a></div>
-        </div>
+</div>
 
-        <!-- Syllabus -->
-        <div class="box">
-            <div style="background:blue; color:white; text-align:center; padding:10px;"><h2>Syllabus</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in syllabuss %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>
-            <div style="text-align:center; margin:15px;"><a href="/syllabus" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Syllabus</a></div>
-        </div>
+    <div class="box" style="border:1px solid gray; padding:5px;">
 
-        <!-- Admission -->
-        <div class="box">
-            <div style="background:purple; color:white; text-align:center; padding:10px;"><h2>Admission</h2></div>
-            <ul style="line-height:35px;">
-                {% for title, link in admissions %} <li><a href="{{ link }}">{{ title }}</a></li> {% endfor %}
-            </ul>
-            <div style="text-align:center; margin:15px;"><a href="/admission" style="background:blue; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; display:inline-block;">View All Admission</a></div>
-        </div>
+    <div style="background:red; color:white; text-align:center; padding:10px;">
+        <h2>Admit Cards</h2>
     </div>
 
-    <!-- Info Content Section -->
-    <div>
-        <h2 style="background:red; color:white; text-align:center; padding:10px; margin-top:20px;">Bihar Result 10+2 Latest Job</h2>
-        <p style="text-align:center; padding:15px; line-height:1.8; font-size:18px;">
-            Bihar Result par aapko Latest Government Jobs, Admit Cards, Results, Admissions, Answer Keys, Syllabus aur Exam Updates ki jankari milti hai. Yahan Bihar aur India bhar ki Sarkari Naukri ki latest updates uplabdh karayi jati hain.
-        </p>
+    <ul style="line-height:35px;"></ul>
+     
+<ul style="line-height:35px; color:black;">
 
-        <table style="width:100%; border-collapse:collapse; text-align:center; margin-bottom:20px;">
-            <tr>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Result</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Police Result</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Jobs</a></td>
-            </tr>
-            <tr>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Admission</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Exam</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Results Hindi</a></td>
-            </tr>
-            <tr>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Result 2026</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Latest Bihar Jobs</a></td>
-                <td style="border:1px solid black;padding:8px;"><a href="#">Bihar Vacancy</a></td>
-            </tr>
-        </table>
+{% for title, link in admit_cards %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
 
-        <h2 style="background:#B22222; color:white; text-align:center; padding:10px;">About Bihar Result</h2>
-        <div style="border:1px solid #ccc; padding:15px; line-height:1.8; font-size:17px;">
-            Bihar Result ek educational portal hai jahan aap Latest Jobs, Admit Cards, Results, Answer Keys, Admissions aur Syllabus ki jankari prapt kar sakte hain. Hamari koshish hai ki students aur job seekers ko sahi aur latest information ek hi jagah par mile.
-        </div>
+</ul>
+    <div style="text-align:center; margin:15px;">
+<a href="/admit-card"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Admit Cards
+</a>
+</div>
 
-        <h2 class="faq-heading" style="background:#006400; color:white; text-align:center; padding:10px; margin-top:20px;">Frequently Asked Questions (FAQ)</h2>
-        <div style="border:1px solid #ccc; padding:15px; line-height:1.8; font-size:17px;">
-            <b>Q. Bihar Result kya hai?</b><br>A. Bihar Result ek educational portal hai jahan latest jobs, admit cards aur results ki jankari milti hai.<br><br>
-            <b>Q. Kya Bihar Result free hai?</b><br>A. Haan, website ka upyog bilkul free hai.<br><br>
-            <b>Q. Yahan kis type ki information milti hai?</b><br>A. Government Jobs, Results, Admit Cards, Admissions, Answer Keys aur Syllabus.<br><br>
-            <b>Q. Kya yeh official website hai?</b><br>A. Nahi, yeh ek information portal hai. Official notification hamesha official website se verify karein.
-        </div>
+</div>
+
+      <div class="box" style="border:1px solid gray; padding:5px;">
+
+    <div style="background:red; color:white; text-align:center; padding:10px;">
+        <h2>Latest Jobs</h2>
     </div>
-    <hr>
+    
+    <ul style="line-height:35px;">
 
-    <!-- Footer -->
-    <div style="background:#222; color:white; text-align:center; padding:20px; margin-top:20px;">
-        <h3 style="margin-bottom:12px;">Connect With Us</h3>
-        <div class="social-links">
-            <a href="#">📢 Telegram</a>
-            <a href="#">📺 YouTube</a>
-            <a href="#">📘 Facebook</a>
-            <a href="#">📷 Instagram</a>
+{% for title, link in latest_jobs %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
+
+</ul>
+    <div style="text-align:center; margin:15px;">
+<a href="/latest-job"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Latest Jobs
+</a>
+</div>
+
+</div>
+
+    <div class="box" style="border:1px solid gray; padding:5px;">
+        <div style="background:green; color:white; text-align:center; padding:10px;">
+            <h2>Answer Key</h2>
         </div>
-        <p style="margin:20px 0;">© 2026 Bihar Result | All Rights Reserved</p>
-        <p>
-            <a href="/about" style="color:yellow;">About</a> |
-            <a href="
+
+        <ul style="line-height:35px;">
+
+{% for title, link in answers_key %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
+
+</ul>
+    <div style="text-align:center; margin:15px;">
+<a href="/answer-key"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Answer Key
+</a>
+</div>
+    </div>
+
+    <div class="box" style="border:1px solid gray; padding:5px;">
+        <div style="background:blue; color:white; text-align:center; padding:10px;">
+            <h2>Syllabus</h2>
+        </div>
+
+        <ul style="line-height:35px;">
+
+{% for title, link in syllabuss %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
+
+</ul>
+    <div style="text-align:center; margin:15px;">
+<a href="/syllabus"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Syllabus
+</a>
+</div>
+    </div>
+
+    <div class="box" style="border:1px solid gray; padding:5px;">
+        <div style="background:purple; color:white; text-align:center; padding:10px;">
+            <h2>Admission</h2>
+        </div>
+
+        <ul style="line-height:35px;">
+
+{% for title, link in admissions %}
+<li><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
+
+</ul>
+    <div style="text-align:center; margin:15px;">
+<a href="/admission"
+style="
+background:blue;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+">
+View All Admission
+</a>
+</div>
+
+</div>
+<div>
+<h2 style="
+background:red;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+">
+Bihar Result 10+2 Latest Job
+</h2>
+
+<p style="
+text-align:center;
+padding:15px;
+line-height:1.8;
+font-size:18px;
+">
+Bihar Result par aapko Latest Government Jobs,
+Admit Cards, Results, Admissions, Answer Keys,
+Syllabus aur Exam Updates ki jankari milti hai.
+Yahan Bihar aur India bhar ki Sarkari Naukri ki
+latest updates uplabdh karayi jati hain.
+</p>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+text-align:center;
+margin-bottom:20px;
+">
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Result</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Police Result</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Jobs</a>
+</td>
+</tr>
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Admission</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Exam</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Results Hindi</a>
+</td>
+</tr>
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Result 2026</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Latest Bihar Jobs</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Vacancy</a>
+</td>
+</tr>
+
+</table>
+<h2 style="
+background:#B22222;
+color:white;
+text-align:center;
+padding:10px;
+">
+About Bihar Result
+</h2>
+
+<div style="
+border:1px solid #ccc;
+padding:15px;
+line-height:1.8;
+font-size:17px;
+">
+
+Bihar Result ek educational portal hai jahan aap
+Latest Jobs, Admit Cards, Results, Answer Keys,
+Admissions aur Syllabus ki jankari prapt kar sakte hain.
+
+Hamari koshish hai ki students aur job seekers ko
+sahi aur latest information ek hi jagah par mile.
+
+</div>
+<h2 class="faq-heading" style="
+background:#006400;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+">
+Frequently Asked Questions (FAQ)
+</h2>
+
+<div style="
+border:1px solid #ccc;
+padding:15px;
+line-height:1.8;
+font-size:17px;
+">
+
+<b>Q. Bihar Result kya hai?</b><br>
+A. Bihar Result ek educational portal hai jahan latest jobs, admit cards aur results ki jankari milti hai.
+
+<br><br>
+
+<b>Q. Kya Bihar Result free hai?</b><br>
+A. Haan, website ka upyog bilkul free hai.
+
+<br><br>
+
+<b>Q. Yahan kis type ki information milti hai?</b><br>
+A. Government Jobs, Results, Admit Cards, Admissions, Answer Keys aur Syllabus.
+
+<br><br>
+
+<b>Q. Kya yeh official website hai?</b><br>
+A. Nahi, yeh ek information portal hai. Official notification hamesha official website se verify karein.
+
+</div>
+<hr>
+
+<div style="
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+">
+
+<h3 style="margin-bottom:12px;">Connect With Us</h3>
+
+<div class="social-links">
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📢 Telegram
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📺 YouTube
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📘 Facebook
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📷 Instagram
+</a>
+
+</div>
+
+<p style="margin:20px 0;">
+© 2026 Bihar Result | All Rights Reserved
+</p>
+
+<p>
+<a href="/about" style="color:yellow;">About</a> |
+<a href="/contact" style="color:yellow;">Contact</a> |
+<a href="/privacy" style="color:yellow;">Privacy Policy</a> |
+<a href="/disclaimer" style="color:yellow;">Disclaimer</a>
+</p>
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    };
+
+    document.getElementById("datetime").innerHTML =
+        now.toLocaleString("en-IN", options);
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</div>
+
+</body>
+</html>

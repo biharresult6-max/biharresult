@@ -145,17 +145,55 @@ a:active {
 
 </style>
 <style>
-body{
-    margin:0;
-    background:#f2f2f2;
-    font-family:Arial, sans-serif;
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
-.main-container{
-    width:1100px;        /* Fix width jo laptop par dikhti hai */
-    min-width: 1100px;   /* Yeh mobile desktop mode ko sikudne nahi dega */
-    margin:0 auto;
-    background:#fff;
+/* Base style for Laptop / Desktop / Mobile Desktop Site */
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* Default state: Desktop menu dikhega aur Mobile menu chhupega */
+.desktop-menu {
+    display: block !important;
+}
+.mobile-menu {
+    display: none !important;
+}
+
+/* 📱 BARS MOBILE BROWSER KE LIYE (Jab normal mobile screen ho) */
+/* Media query tabhi chalegi jab screen real mobile browser width par ho */
+@media screen and (max-width: 768px) {
+    /* Agar user ne Desktop Site ON nahi kiya hai, tabhi yeh code chalega */
+    html:not([style*="zoom"]) .main-container {
+        width: 100% !important;
+    }
+
+    html:not([style*="zoom"]) .desktop-menu {
+        display: none !important; /* Laptop menu chhup gaya */
+    }
+
+    html:not([style*="zoom"]) .mobile-menu {
+        display: block !important; /* Mobile menu (☰ Menu) bahar aa gaya */
+    }
+
+    html:not([style*="zoom"]) .mobile-links {
+        display: none;
+        background: #000080;
+    }
+
+    html:not([style*="zoom"]) .mobile-links a {
+        display: block;
+        color: white;
+        padding: 12px;
+        text-decoration: none;
+        border-top: 1px solid #444;
+    }
 }
 </style>
 <style>

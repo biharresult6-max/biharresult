@@ -18,14 +18,6 @@ def home():
         admissions=admissions[:10],
     )
 
-@app.route("/about")
-def about():
-    return """
-    <h1>About Me</h1><p>Mera naam Aryan hai.</p>
-    <br><br>
-<a href="/">Home Page</a>
-"""
-
 @app.route('/robots.txt')
 def robots():
     return send_from_directory('.', 'robots.txt')
@@ -213,6 +205,652 @@ def admission():
 @app.route("/admission/<slug>")
 def admission_page(slug):
     return render_template(f"admission/{slug}.html")
+
+@app.route("/about")
+def contact():
+    return """
+        <html lang="en-IN"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Bihar Result</title>
+
+<meta name="description" content="Latest Government Jobs, Admit Cards, Results, 
+Admissions, Answer Key and Syllabus updates on Bihar Result.">
+
+<link rel="canonical" href="https://biharresult.com.Bm/contact">
+
+<style>
+.mobile-menu{
+display:none;
+}
+
+@media screen and (max-width:768px){
+
+.desktop-menu{
+display:none;
+}
+
+.mobile-menu{
+display:block;
+background:#000080;
+padding:15px;
+color:white;
+}
+
+.mobile-links{
+display:none;
+background:#000080;
+}
+
+.mobile-links a{
+display:block;
+color:white;
+padding:12px;
+text-decoration:none;
+border-top:1px solid #444;
+}
+}
+</style>
+<style>
+#overlay{
+backdrop-filter: blur(5px);
+}
+</style>
+<style>
+ul li{
+color:black;
+margin-bottom:10px;
+}
+</style>
+<style>
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:active {
+    color: darkblue;
+}
+</style>
+<style>
+body{
+    margin:0;
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+}
+
+.main-container{
+    width:1100px;
+    margin:0 auto;
+    background:#fff;
+}
+
+@media (max-width:1100px){
+    .main-container{
+        width:100%;
+    }
+}
+</style>
+<style>
+.logo-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin:0;
+    color:#fff;
+    font-family:'Times New Roman', Georgia, serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:clamp(28px,7vw,60px);
+    white-space:nowrap;
+}
+
+.logo-title span{
+    font-size:clamp(24px,6vw,50px);
+}
+
+.site-name{
+    margin:10px 0 0;
+    text-align:center;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    font-size:clamp(15px,3.5vw,26px);
+}
+
+@media (max-width:480px){
+    .logo-title{
+        gap:5px;
+        letter-spacing:0;
+    }
+
+    .site-name{
+        margin-top:6px;
+    }
+}
+</style>
+<style>
+.social-links{
+    text-align:center;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
+}
+
+@media (max-width:768px){
+.social-links{
+display:flex;
+justify-content:center;
+gap:8px;
+}
+
+.social-links a{
+margin:0 !important;
+font-size:14px;
+}
+}
+</style>
+</head>
+
+<body style="font-family:Arial;">
+
+<div class="main-container">
+    <div style="
+background:red;
+color:white;
+text-align:center;
+padding:20px;
+width:100%;
+box-sizing:border-box;
+">
+    <a href="/" style="text-decoration:none; color:white;">
+    <div class="logo-title">
+        <span>📚</span>
+        BIHAR RESULT
+    </div>
+    </a>
+
+    <p class="site-name">
+        BiharResult.com.Bm
+    </p>
+
+</div>
+    <div class="desktop-menu" style="background:blue; padding:12px; text-align:center; font-size:20px;">
+
+<a href="/" style="color:white; text-decoration:none; margin:10px;">Home</a>
+
+<a href="/latest-job" style="color:white; text-decoration:none; margin:10px;">Latest Job</a>
+
+<a href="/admit-card" style="color:white; text-decoration:none; margin:10px;">Admit Card</a>
+
+<a href="/result" style="color:white; text-decoration:none; margin:10px;">Result</a>
+
+<a href="/admission" style="color:white; text-decoration:none; margin:10px;">Admission</a>
+
+<a href="/syllabus" style="color:white; text-decoration:none; margin:10px;">Syllabus</a>
+
+<a href="/answer-key" style="color:white; text-decoration:none; margin:10px;">Answer Key</a>
+
+<div style="position:relative; display:inline-block;">
+
+<a href="javascript:void(0);"
+onclick="
+var x=document.getElementById('moreMenu');
+if(x.style.display=='block'){
+x.style.display='none';
+}else{
+x.style.display='block';
+}
+"
+style="color:white; text-decoration:none; margin:10px;">
+More ▼
+</a>
+
+<div id="moreMenu" style="
+display:none;
+position:absolute;
+top:35px;
+right:0;
+background:rgba(0,0,0,0.85);
+padding:10px;
+border-radius:10px;
+min-width:180px;
+z-index:999;
+">
+
+<a href="/contact" style="color:white; text-decoration:none; display:block; padding:8px;">
+Contact Us
+</a>
+
+<a href="/privacy" style="color:white; text-decoration:none; display:block; padding:8px;">
+Privacy Policy
+</a>
+
+<a href="/disclaimer" style="color:white; text-decoration:none; display:block; padding:8px;">
+Disclaimer
+</a>
+
+</div>
+
+</div>
+<a href="javascript:void(0);"
+onclick="
+var x=document.getElementById('searchBox');
+var o=document.getElementById('overlay');
+
+if(x.style.display=='none' || x.style.display==''){
+    x.style.display='block';
+    o.style.display='block';
+}else{
+    x.style.display='none';
+    o.style.display='none';
+}
+"
+style="color:white; text-decoration:none; font-size:35px;">
+🔍
+</a>
+</div>
+<div class="mobile-menu">
+
+<span onclick="
+var x=document.getElementById('mobileLinks');
+if(x.style.display=='block'){
+x.style.display='none';
+}else{
+x.style.display='block';
+}
+"
+style="font-size:30px;cursor:pointer;">
+☰ Menu
+</span>
+
+<span
+onclick="
+var x=document.getElementById('searchBox');
+var o=document.getElementById('overlay');
+
+if(x.style.display=='none' || x.style.display==''){
+    x.style.display='block';
+    o.style.display='block';
+}else{
+    x.style.display='none';
+    o.style.display='none';
+}
+"
+style="float:right;font-size:30px;cursor:pointer;color:white;">
+🔍
+</span>
+
+<div id="mobileLinks" class="mobile-links">
+
+<a href="/">Home</a>
+<a href="/latest-job">Latest Job</a>
+<a href="/admit-card">Admit Card</a>
+<a href="/result">Result</a>
+<a href="/admission">Admission</a>
+<a href="/syllabus">Syllabus</a>
+<a href="/answer-key">Answer Key</a>
+<a href="/contact">Contact Us</a>
+<a href="/privacy">Privacy Policy</a>
+<a href="/disclaimer">Disclaimer</a>
+
+</div>
+
+</div>
+<div id="overlay"
+onclick="
+document.getElementById('overlay').style.display='none';
+document.getElementById('searchBox').style.display='none';
+"
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:999;
+">
+</div>
+
+<div id="searchBox"
+style="
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:90%;
+max-width:500px;
+background:transparent;
+padding:15px;
+border-radius:10px;
+text-align:center;
+z-index:1000;
+">
+
+<form action="/search" method="get"
+style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+">
+
+<input
+type="text"
+name="q"
+placeholder="🔍 Search Jobs, Results, Admit Card..."
+style="
+width:320px;
+max-width:70%;
+padding:12px;
+background:white;
+color:black;
+border:2px solid green;
+border-radius:25px;
+font-size:16px;
+outline:none;
+">
+
+<button
+type="submit"
+style="
+padding:12px 18px;
+background:blue;
+color:white;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+white-space:nowrap;
+">
+Search
+</button>
+
+</form>
+
+</div>
+
+<h1 style="text-align:center;">About</h1>
+<hr>
+
+<div style="
+max-width:900px;
+margin:25px auto;
+background:#fff;
+border:1px solid #ccc;
+border-radius:8px;
+padding:25px;
+box-shadow:0 0 8px rgba(0,0,0,0.15);
+line-height:1.8;
+font-size:18px;
+">
+
+<h2 style="margin-top:0;">
+<span style="color:red;">Contact with BiharResult.com.Bm</span>
+</h2>
+
+<p>
+Welcome to <strong>BiharResult.com.Bm</strong>.
+If you have any questions, suggestions, corrections or feedback regarding Government Jobs,
+Admit Cards, Results, Admissions, Answer Keys or Syllabus updates, feel free to contact us.
+Our team will try to respond as soon as possible.
+</p>
+
+<p>
+<strong>हम BiharResult.com.Bm पर आपका स्वागत करते हैं।</strong>
+यदि आपको हमारी वेबसाइट से संबंधित कोई प्रश्न, सुझाव, सुधार या सहायता चाहिए,
+तो आप हमसे संपर्क कर सकते हैं। हमारी टीम आपकी सहायता करने का पूरा प्रयास करेगी।
+</p>
+
+<hr>
+
+<h2 style="color:#B22222;text-align:center;">
+Contact Information
+</h2>
+
+<p>
+<b>Email:</b><br>
+<a href="mailto:biharresult@gmail.com">
+biharresult@gmail.com
+</a>
+</p>
+
+<p>
+<b>Website:</b><br>
+<a href="https://biharresult.com.Bm">
+https://biharresult.com.Bm
+</a>
+</p>
+
+<hr>
+
+<h2>Content Transparency</h2>
+
+<p>
+All information published on BiharResult.com.Bm is collected from official notifications,
+government websites and trusted public sources.
+Although we try our best to keep every update accurate and timely,
+users are advised to verify important information from the official website before taking any action.
+</p>
+
+<p>
+BiharResult.com.Bm पर प्रकाशित सभी जानकारी आधिकारिक नोटिफिकेशन,
+सरकारी वेबसाइटों तथा विश्वसनीय स्रोतों से ली जाती है।
+फिर भी किसी भी आवेदन या निर्णय से पहले आधिकारिक वेबसाइट पर जानकारी अवश्य जांच लें।
+</p>
+
+<hr>
+
+<h2>Support</h2>
+
+<p>
+For any correction request, feedback or reporting an issue,
+please email us with complete details.
+We appreciate your valuable suggestions.
+</p>
+
+<p style="text-align:center;font-weight:bold;font-size:22px;">
+Team BiharResult.com.Bm
+</p>
+
+</div>
+
+<h2 style="
+background:red;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+">
+Bihar Result 10+2 Latest Job
+</h2>
+
+<p style="
+text-align:center;
+padding:15px;
+line-height:1.8;
+font-size:18px;
+">
+Bihar Result par aapko Latest Government Jobs,
+Admit Cards, Results, Admissions, Answer Keys,
+Syllabus aur Exam Updates ki jankari milti hai.
+Yahan Bihar aur India bhar ki Sarkari Naukri ki
+latest updates uplabdh karayi jati hain.
+</p>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+text-align:center;
+margin-bottom:20px;
+">
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Result</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Police Result</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Jobs</a>
+</td>
+</tr>
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Admission</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Exam</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Results Hindi</a>
+</td>
+</tr>
+
+<tr>
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Result 2026</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Latest Bihar Jobs</a>
+</td>
+
+<td style="border:1px solid black;padding:8px;">
+<a href="#">Bihar Vacancy</a>
+</td>
+</tr>
+
+</table>
+<h2 style="
+background:#B22222;
+color:white;
+text-align:center;
+padding:10px;
+">
+About Bihar Result
+</h2>
+
+<div style="
+border:1px solid #ccc;
+padding:15px;
+line-height:1.8;
+font-size:17px;
+">
+
+Bihar Result ek educational portal hai jahan aap
+Latest Jobs, Admit Cards, Results, Answer Keys,
+Admissions aur Syllabus ki jankari prapt kar sakte hain.
+
+Hamari koshish hai ki students aur job seekers ko
+sahi aur latest information ek hi jagah par mile.
+
+</div>
+<h2 style="
+background:#006400;
+color:white;
+text-align:center;
+padding:10px;
+">
+Frequently Asked Questions (FAQ)
+</h2>
+
+<div style="
+border:1px solid #ccc;
+padding:15px;
+line-height:1.8;
+font-size:17px;
+">
+
+<b>Q. Bihar Result kya hai?</b><br>
+A. Bihar Result ek educational portal hai jahan latest jobs, admit cards aur results ki jankari milti hai.
+
+<br><br>
+
+<b>Q. Kya Bihar Result free hai?</b><br>
+A. Haan, website ka upyog bilkul free hai.
+
+<br><br>
+
+<b>Q. Yahan kis type ki information milti hai?</b><br>
+A. Government Jobs, Results, Admit Cards, Admissions, Answer Keys aur Syllabus.
+
+<br><br>
+
+<b>Q. Kya yeh official website hai?</b><br>
+A. Nahi, yeh ek information portal hai. Official notification hamesha official website se verify karein.
+
+</div>
+<hr>
+
+<div style="
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+">
+
+<h3 style="margin-bottom:12px;">Connect With Us</h3>
+
+<div class="social-links">
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📢 Telegram
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📺 YouTube
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📘 Facebook
+</a>
+
+<a href="#" style="color:white;text-decoration:none;margin:10px;">
+📷 Instagram
+</a>
+
+</div>
+
+<p style="margin:20px 0;">
+© 2026 Bihar Result | All Rights Reserved
+</p>
+
+<p>
+<a href="/about" style="color:yellow;">About</a> |
+<a href="/contact" style="color:yellow;">Contact</a> |
+<a href="/privacy" style="color:yellow;">Privacy Policy</a> |
+<a href="/disclaimer" style="color:yellow;">Disclaimer</a>
+</p>
+</div>
+
+</body>
+</html>
+"""
 
 @app.route("/contact")
 def contact():

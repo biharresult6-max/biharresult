@@ -207,7 +207,7 @@ def admission_page(slug):
     return render_template(f"admission/{slug}.html")
 
 @app.route("/about")
-def contact():
+def about():
     return """
         <html lang="en-IN"> 
 <head>

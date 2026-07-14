@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biharresult.com.Bm/sitemap.xml
+Sitemap: https://biharresult.onrender.com/sitemap.xml

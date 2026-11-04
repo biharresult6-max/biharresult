@@ -1,6 +1,13 @@
-from flask import Flask, request, send_from_directory, render_template, redirect, url_for
+import re
+from flask import Flask, request, send_from_directory, render_template, redirect, url_for, abort
 
 app = Flask(__name__)
+
+def safe_render_template(folder, slug):
+    if not re.fullmatch(r"[a-z0-9-]{1,100}", slug):
+        abort(404)
+
+    return render_template(f"{folder}/{slug}.html")
 
 @app.after_request
 def add_security_headers(response):
@@ -67,7 +74,7 @@ def lates():
 
 @app.route("/result/<slug>")
 def result_page(slug):
-    return render_template(f"result/{slug}.html")
+    return safe_render_template("result", slug)
 
 admit_cards = [
     ("UPTET Exam City Details 2026", "/admit/uptet-exam-2026"),
@@ -101,7 +108,7 @@ def admit_card():
 
 @app.route("/admit/<slug>")
 def admit_page(slug):
-    return render_template(f"admit-card/{slug}.html")
+    return safe_render_template("admit-card", slug)
 
 latest_jobs = [
     ("Railway RRB Technician Online Form 2026 (6565 Posts) – Start", "/job/rrb-technician-2026"),
@@ -137,7 +144,7 @@ def latest_job():
 
 @app.route("/job/<slug>")
 def job_page(slug):
-    return render_template(f"latest-job/{slug}.html")
+    return safe_render_template("latest-job", slug)
 
 answers_key= [
     ("BPSC AES Answer Key 2026 – Out", "/answer/bpsc-aes-2026"),
@@ -167,7 +174,7 @@ def answer_key():
 
 @app.route("/answer/<slug>")
 def answer_page(slug):
-    return render_template(f"answer-key/{slug}.html")
+    return safe_render_template("answer-key", slug)
 
 syllabuss = [
     ("UPTET Exam City Details 2026 – Out", "/syllabus/uptet-exam"),
@@ -187,7 +194,7 @@ def syllabul():
 
 @app.route("/syllabus/<slug>")
 def syllabus_page(slug):
-    return render_template(f"syllabus/{slug}.html")
+    return safe_render_template("syllabus", slug)
 
 admissions = [
     ("UP DGMHUP ANM Training Online Registration 2026", "/admission/up-dgmhup-anm-training-2026"),
@@ -211,7 +218,7 @@ def admission():
 
 @app.route("/admission/<slug>")
 def admission_page(slug):
-    return render_template(f"admission/{slug}.html")
+    return safe_render_template("admission", slug)
 
 @app.route("/about")
 def about():

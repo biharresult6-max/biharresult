@@ -2,6 +2,13 @@ from flask import Flask, request, send_from_directory, render_template, redirect
 
 app = Flask(__name__)
 
+@app.after_request
+def add_security_headers(response):
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    response.headers["X-Frame-Options"] = "SAMEORIGIN"
+    return response
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory('static', 'logo.png')

@@ -1,4 +1,4 @@
-from flask import Flask, request, send_from_directory, render_template, redirect
+from flask import Flask, request, send_from_directory, render_template, redirect, url_for
 
 app = Flask(__name__)
 
@@ -2797,37 +2797,28 @@ margin-top:20px;
 
 @app.route("/search")
 def search():
-    q = request.args.get("q", "").lower()
+    q = request.args.get("q", "").strip().lower()[:100]
 
     if "result" in q:
-        return redirect("/result")
-
+        return redirect(url_for("result"))
     elif "admit" in q:
-        return redirect("/admit-card")
-
+        return redirect(url_for("admit_card"))
     elif "job" in q:
-        return redirect("/latest-job")
-    
+        return redirect(url_for("latest_job"))
     elif "answer" in q:
-        return redirect("/answer-key")
-    
+        return redirect(url_for("answer_key"))
     elif "syllabus" in q:
-        return redirect("/syllabus")
-    
+        return redirect(url_for("syllabus"))
     elif "admission" in q:
-        return redirect("/admission")
-    
+        return redirect(url_for("admission"))
     elif "contact" in q:
-        return redirect("/contact")
-    
+        return redirect(url_for("contact"))
     elif "privacy" in q:
-        return redirect("/privacy")
-    
+        return redirect(url_for("privacy"))
     elif "disclaimer" in q:
-        return redirect("/disclaimer")
+        return redirect(url_for("disclaimer"))
 
-    else:
-        return redirect("/")
+    return redirect("/")
 
 
 @app.route("/upsssc-lower-pcs")

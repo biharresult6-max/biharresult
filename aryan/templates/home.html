@@ -338,18 +338,10 @@ box-sizing:border-box;
 
 <div style="position:relative; display:inline-block;">
 
-<a href="javascript:void(0);"
-onclick="
-var x=document.getElementById('moreMenu');
-if(x.style.display=='block'){
-x.style.display='none';
-}else{
-x.style.display='block';
-}
-"
-style="color:white; text-decoration:none; margin:10px;">
+<button type="button" id="moreToggle"
+style="color:white; text-decoration:none; margin:10px; background:transparent; border:none; cursor:pointer; font:inherit;">
 More ▼
-</a>
+</button>
 
 <div id="moreMenu" style="
 display:none;
@@ -378,53 +370,23 @@ Disclaimer
 </div>
 
 </div>
-<a href="javascript:void(0);"
-onclick="
-var x=document.getElementById('searchBox');
-var o=document.getElementById('overlay');
 
-if(x.style.display=='none' || x.style.display==''){
-    x.style.display='block';
-    o.style.display='block';
-}else{
-    x.style.display='none';
-    o.style.display='none';
-}
-"
-style="color:white; text-decoration:none; font-size:35px;">
+<button type="button" id="desktopSearchToggle"
+style="color:white; text-decoration:none; font-size:35px; background:transparent; border:none; cursor:pointer;">
 🔍
-</a>
+</button>
 </div>
 <div class="mobile-menu">
 
-<span onclick="
-var x=document.getElementById('mobileLinks');
-if(x.style.display=='block'){
-x.style.display='none';
-}else{
-x.style.display='block';
-}
-"
+<button type="button" id="mobileMenuToggle"
 style="font-size:30px;cursor:pointer;">
 ☰ Menu
-</span>
+</button>
 
-<span
-onclick="
-var x=document.getElementById('searchBox');
-var o=document.getElementById('overlay');
-
-if(x.style.display=='none' || x.style.display==''){
-    x.style.display='block';
-    o.style.display='block';
-}else{
-    x.style.display='none';
-    o.style.display='none';
-}
-"
+<button type="button" id="mobileSearchToggle"
 style="float:right;font-size:30px;cursor:pointer;color:white;">
 🔍
-</span>
+</button>
 
 <div id="mobileLinks" class="mobile-links">
 
@@ -442,12 +404,8 @@ style="float:right;font-size:30px;cursor:pointer;color:white;">
 </div>
 
 </div>
-<div id="overlay"
-onclick="
-document.getElementById('overlay').style.display='none';
-document.getElementById('searchBox').style.display='none';
-"
-style="
+
+<div id="overlay" style="
 display:none;
 position:fixed;
 top:0;
@@ -943,6 +901,7 @@ margin-top:20px;
 <a href="/disclaimer" style="color:yellow;">Disclaimer</a>
 </p>
 <script src="{{ url_for('static', filename='js/datetime.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/navigation.js') }}" defer></script>
 
 </div>
 

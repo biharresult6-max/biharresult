@@ -956,7 +956,7 @@ function updateDateTime() {
         second: "2-digit"
     };
 
-    document.getElementById("datetime").innerHTML =
+    document.getElementById("datetime").textContent =
         now.toLocaleString("en-IN", options);
 }
 

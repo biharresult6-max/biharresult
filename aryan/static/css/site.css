@@ -331,3 +331,29 @@ body {
     text-align: center;
     z-index: 1000;
 }
+/* Fix desktop More dropdown */
+.desktop-menu > div {
+    position: relative;
+    display: inline-block;
+}
+
+#moreMenu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: none;
+    width: max-content;
+    min-width: 180px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+#moreMenu a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    margin: 0;
+}

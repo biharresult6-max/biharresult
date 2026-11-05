@@ -102,19 +102,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Base style for Laptop / Desktop / Mobile Desktop Site */
 .main-container {
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
     background: #fff;
 }
 
-/* Default state: Desktop menu dikhega aur Mobile menu chhupega */
 .desktop-menu {
-    display: block !important;
+    display: block;
 }
+
 .mobile-menu {
-    display: none !important;
+    display: none;
 }
 
 /* 📱 BARS MOBILE BROWSER KE LIYE (Jab normal mobile screen ho) */
@@ -154,6 +154,14 @@ body {
         font-size: 14px !important; /* Font chota kar diya */
         text-align: center;         /* Center mein align rahega */
         margin: 5px 0;             /* Thoda upar niche ka gap kam kiya */
+    }
+
+    html:not([style*="zoom"]) .desktop-menu {
+        display: none;
+    }
+
+    html:not([style*="zoom"]) .mobile-menu {
+        display: block;
     }
 }
 .logo-title{

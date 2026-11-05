@@ -357,3 +357,16 @@ body {
     padding: 8px;
     margin: 0;
 }
+.more-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#moreMenu a {
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0;
+}

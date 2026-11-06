@@ -335,3 +335,66 @@ body {
     position: relative;
     display: inline-block;
 }
+
+/* MOBILE MENU AND SEARCH DESIGN */
+
+@media screen and (max-width: 1100px) {
+
+    .mobile-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 10px;
+        background: #000080;
+        box-sizing: border-box;
+        gap: 8px;
+    }
+
+    #mobileMenuToggle,
+    #mobileSearchToggle {
+        appearance: none;
+        -webkit-appearance: none;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 8px 10px;
+        border-radius: 5px;
+        line-height: 1.3;
+    }
+
+    #mobileMenuToggle {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #mobileSearchToggle {
+        font-size: 25px;
+        width: 45px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobileMenuToggle:active,
+    #mobileSearchToggle:active {
+        background: #2222aa;
+    }
+
+    .mobile-links {
+        flex-basis: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-links a {
+        display: block;
+        color: white;
+        padding: 12px;
+        text-decoration: none;
+        border-top: 1px solid #444;
+    }
+}

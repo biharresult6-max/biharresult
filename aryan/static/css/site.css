@@ -1,44 +1,49 @@
 
-.mobile-menu{
-display:none;
+/* DESKTOP MENU */
+.desktop-menu {
+    display: block;
+    background: blue;
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
 }
 
-@media screen and (max-width:1100px){
-
-.desktop-menu{
-display:none;
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    background: #000080;
+    padding: 15px;
+    color: white;
 }
 
-.mobile-menu{
-display:block;
-background:#000080;
-padding:15px;
-color:white;
+.mobile-links {
+    display: none;
+    background: #000080;
 }
 
-.mobile-links{
-display:none;
-background:#000080;
+.mobile-links a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-top: 1px solid #444;
 }
 
-.mobile-links a{
-display:block;
-color:white;
-padding:12px;
-text-decoration:none;
-border-top:1px solid #444;
-}
+/* TABLET AND MOBILE */
+@media screen and (max-width: 1100px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }
 .box{
     border:1px solid gray;
     padding:5px;
     box-sizing:border-box;
-}
-
-@media screen and (max-width:1100px){
-    .box{
-        width:calc(50% - 5px);
-    }
 }
 
 @media screen and (min-width:769px){
@@ -47,28 +52,6 @@ border-top:1px solid #444;
     }
 }
 
-.desktop-menu{
-    display:block;
-}
-
-.mobile-menu{
-    display:none;
-}
-
-.mobile-links{
-    display:none;
-}
-
-@media screen and (max-width:1100px){
-
-    .desktop-menu{
-        display:none;
-    }
-
-    .mobile-menu{
-        display:block;
-    }
-}
 .box ul{
     padding-left:20px;
 }
@@ -274,25 +257,6 @@ body {
     font: inherit;
 }
 
-#moreMenu {
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 0;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 10px;
-    border-radius: 10px;
-    min-width: 180px;
-    z-index: 999;
-}
-
-#moreMenu a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-}
-
 #desktopSearchToggle {
     color: white;
     text-decoration: none;
@@ -300,6 +264,33 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
+}
+
+.more-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#moreMenu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: max-content;
+    min-width: 180px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+#moreMenu a {
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0;
 }
 
 #mobileMenuToggle {
@@ -343,38 +334,4 @@ body {
 .desktop-menu > div {
     position: relative;
     display: inline-block;
-}
-
-#moreMenu {
-    position: absolute;
-    top: 35px;
-    right: 0;
-    display: none;
-    width: max-content;
-    min-width: 180px;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 999;
-}
-
-#moreMenu a {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 8px;
-    margin: 0;
-}
-.more-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-#moreMenu a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-    padding: 8px;
-    margin: 0;
 }

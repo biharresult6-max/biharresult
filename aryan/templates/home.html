@@ -74,48 +74,30 @@
 </div>
     <div class="desktop-menu">
 
-<a href="/" style="color:white; text-decoration:none; margin:10px;">Home</a>
+    <a href="/">Home</a>
+    <a href="/latest-job">Latest Job</a>
+    <a href="/admit-card">Admit Card</a>
+    <a href="/result">Result</a>
+    <a href="/admission">Admission</a>
+    <a href="/syllabus">Syllabus</a>
+    <a href="/answer-key">Answer Key</a>
 
-<a href="/latest-job" style="color:white; text-decoration:none; margin:10px;">Latest Job</a>
+    <div class="more-wrapper">
 
-<a href="/admit-card" style="color:white; text-decoration:none; margin:10px;">Admit Card</a>
+        <button type="button" id="moreToggle">
+            More ▼
+        </button>
 
-<a href="/result" style="color:white; text-decoration:none; margin:10px;">Result</a>
+        <div id="moreMenu">
+            <a href="/contact">Contact Us</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
 
-<a href="/admission" style="color:white; text-decoration:none; margin:10px;">Admission</a>
+    </div>
 
-<a href="/syllabus" style="color:white; text-decoration:none; margin:10px;">Syllabus</a>
+    <button type="button" id="desktopSearchToggle">🔍</button>
 
-<a href="/answer-key" style="color:white; text-decoration:none; margin:10px;">Answer Key</a>
-
-<div style="position:relative; display:inline-block;">
-
-<button type="button" id="moreToggle">
-More ▼
-</button>
-
-<button type="button" id="desktopSearchToggle">
-
-<a href="/contact" style="color:white; text-decoration:none; display:block; padding:8px;">
-Contact Us
-</a>
-
-<a href="/privacy" style="color:white; text-decoration:none; display:block; padding:8px;">
-Privacy Policy
-</a>
-
-<a href="/disclaimer" style="color:white; text-decoration:none; display:block; padding:8px;">
-Disclaimer
-</a>
-
-</div>
-
-</div>
-
-<button type="button" id="desktopSearchToggle"
-style="color:white; text-decoration:none; font-size:35px; background:transparent; border:none; cursor:pointer;">
-🔍
-</button>
 </div>
 <div class="mobile-menu">
 
@@ -144,72 +126,23 @@ style="color:white; text-decoration:none; font-size:35px; background:transparent
 
 </div>
 
-<div id="overlay">
-</div>
+<div id="overlay"></div>
 
-<div id="searchBox"></div>
+<div id="searchBox">
 
-<form action="/search" method="get"
-style="
-display:flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-">
+    <form action="/search" method="get"
+    style="display:flex; align-items:center; justify-content:center; gap:8px;">
 
-<div style="
-position:relative;
-width:320px;
-max-width:70%;
-flex:1;
-">
+        <input
+            type="text"
+            name="q"
+            placeholder="Search Jobs, Results, Admit Card..."
+            style="width:100%; padding:12px; border:2px solid green; border-radius:25px;"
+        >
 
-<span style="
-position:absolute;
-left:14px;
-top:50%;
-transform:translateY(-50%);
-color:#666;
-font-size:18px;
-pointer-events:none;
-">
-🔍
-</span>
+        <button type="submit">Search</button>
 
-<input
-type="text"
-name="q"
-placeholder="Search Jobs, Results, Admit Card..."
-style="
-width:100%;
-padding:12px 12px 12px 42px;
-background:white;
-color:black;
-border:2px solid green;
-border-radius:25px;
-font-size:16px;
-outline:none;
-box-sizing:border-box;
-">
-
-</div>
-
-<button
-type="submit"
-style="
-padding:12px 18px;
-background:blue;
-color:white;
-border:none;
-border-radius:25px;
-font-size:16px;
-cursor:pointer;
-white-space:nowrap;
-">
-Search
-</button>
-
-</form>
+    </form>
 
 </div>
 
